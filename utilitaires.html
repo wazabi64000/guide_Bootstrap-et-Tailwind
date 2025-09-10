@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Guide Bootstrap & Tailwind — Utilitaires</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="h3 m-0">Guide Bootstrap & Tailwind</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Introduction</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="installation.html">Installation</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="grille.html">Grilles</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="composants.html">Composants</a></li>
+          <li class="nav-item"><a class="nav-link text-white active" href="utilitaires.html">Utilitaires</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="exercices.html">Exercices</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="container py-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Classes utilitaires et personnalisation</h2>
+
+        <h3>1. Bootstrap : utilitaires CSS</h3>
+        <p>Bootstrap propose de nombreuses classes utilitaires pour :</p>
+        <ul>
+          <li>**Espacement :** <code>m-3</code>, <code>p-2</code></li>
+          <li>**Couleurs :** <code>bg-primary</code>, <code>text-success</code></li>
+          <li>**Alignement :** <code>text-center</code>, <code>d-flex justify-content-between</code></li>
+        </ul>
+        <p>Exemple :</p>
+        <pre><code>&lt;div class="p-3 mb-3 bg-light text-center"&gt;Texte centré&lt;/div&gt;</code></pre>
+
+        <h3>2. Tailwind : utilitaires CSS</h3>
+        <p>Tailwind fonctionne uniquement avec des classes utilitaires :</p>
+        <ul>
+          <li>**Espacement :** <code>m-4</code>, <code>p-2</code></li>
+          <li>**Couleurs :** <code>bg-blue-500</code>, <code>text-white</code></li>
+          <li>**Flex et Grid :** <code>flex justify-between</code>, <code>grid grid-cols-3 gap-4</code></li>
+          <li>**Responsive :** <code>sm:</code>, <code>md:</code>, <code>lg:</code></li>
+        </ul>
+        <p>Exemple :</p>
+        <pre><code>&lt;div class="p-4 mb-4 bg-gray-200 text-center sm:text-left"&gt;Texte responsive&lt;/div&gt;</code></pre>
+
+        <h3>3. Personnalisation</h3>
+        <p>Bootstrap :</p>
+        <ul>
+          <li>Modifier les variables Sass pour couleurs, marges, typographie.</li>
+          <li>Créer un thème personnalisé.</li>
+        </ul>
+        <p>Tailwind :</p>
+        <ul>
+          <li>Configurer <code>tailwind.config.js</code> pour ajouter des couleurs, spacing, polices.</li>
+          <li>Créer des composants réutilisables avec des utilitaires combinés.</li>
+        </ul>
+        <pre><code>// Exemple Tailwind config
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        brand: '#1da1f2',
+      },
+      spacing: {
+        72: '18rem',
+      }
+    }
+  }
+}</code></pre>
+
+        <p class="call">
+          <a href="exercices.html" class="btn btn-primary mt-3">Étape suivante : Exercices →</a>
+        </p>
+      </div>
+
+      <aside class="col-md-4 bg-white p-3 rounded shadow-sm">
+        <h4>Résumé utilitaires</h4>
+        <ul>
+          <li>Bootstrap : classes utilitaires prédéfinies pour styles rapides.</li>
+          <li>Tailwind : classes utilitaires pour design flexible et responsive.</li>
+          <li>Personnalisation possible sur les deux frameworks via configuration.</li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-3 text-center">
+    © 2025 — Guide Bootstrap & Tailwind. Utilitaires et personnalisation.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
